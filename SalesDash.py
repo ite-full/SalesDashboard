@@ -8,7 +8,7 @@ from datetime import date
 from dash.dependencies import Output, Input
 
 # prepare data
-df_orders = pd.read_csv('OrdersSmaller.csv')
+df_orders = pd.read_csv('OrdersSmallest.csv')
 df_orders['Order Date'] = pd.to_datetime(df_orders['Order Date'], format='%d/%m/%Y')
 df_orders['Ship Date'] = pd.to_datetime(df_orders['Ship Date'], format='%d/%m/%Y')
 # removing $ and , and convert to numeric field
